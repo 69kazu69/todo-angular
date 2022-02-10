@@ -1,0 +1,18 @@
+<div class="my-3">
+    <h4 class  = "text-center">Add a Task</h4>
+<form (ngSubmit) = "onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label ">Title</label>
+      <input [(ngModel)]="title" type="email" class="form-control " name = "title" id="title" aria-describedby="emailHelp">
+     
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Description</label>
+      <input [(ngModel)]="desc" type="text" class="form-control" id="desc" name = "desc" >
+    </div>
+    
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary text-center">Add Task</button>
+    </div>
+  </form>
+</div>
